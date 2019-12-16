@@ -1,0 +1,29 @@
+{
+  "name": "code",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node app/Bin/www",
+    "dev": "nodemon node app/Bin/www",
+    "test": "./node_modules/.bin/mocha './app/Test/**/**.js'",
+    "coverage": "nyc mocha './app/Test/**/**.js'"
+  },
+  "dependencies": {
+    "common-env": "^6.3.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.8.1",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "nodemon": "^2.0.2",
+    "nyc": "^12.0.2"
+  }
+}
